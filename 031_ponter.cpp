@@ -8,8 +8,9 @@ public:
 };
 
 void mahasiswa::showNim() {
-
+    cout << "No Induk = " << nim << endl;
 }
+
 int main()
 {
     std::cout << "Hello World!\n";
