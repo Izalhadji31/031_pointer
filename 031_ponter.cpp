@@ -7,6 +7,9 @@ public:
     void showNim();
 };
 
+void mahasiswa::showNim() {
+
+}
 int main()
 {
     std::cout << "Hello World!\n";
