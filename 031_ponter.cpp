@@ -11,15 +11,15 @@ void mahasiswa::showNim() { //implementasi method diluar class
 }
 int main()
 {
-    mahasiswa mhs{ 1 };
+    mahasiswa mhs{ 1 }; //objectmhs
+    mhs.showNim(); //Member Access Operator
+
+    mahasiswa& ref = mhs; //Pointer Reference refMhs
+    ref.nim = 2; //Member Access Operator
     mhs.showNim();
 
-    mahasiswa& ref = mhs;
-    ref.nim = 2;
-    mhs.showNim();
-
-    mahasiswa* pMhs = &mhs;
-    pMhs->nim = 3;
+    mahasiswa* pMhs = &mhs; //Pointer Dereference pMhs
+    pMhs->nim = 3; // Arrow Operator
     mhs.showNim();
     system("pause");
     return 0;
